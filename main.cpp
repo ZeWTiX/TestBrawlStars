@@ -1,9 +1,10 @@
 #include <iostream>
+#include <ctime>
 
 int main() {
   std::cout << "Тест. Кто ты из бравлстарса по паролю от соц. сетей" << std::endl;
   int start; // Переменная для старта БРОУЛ СТАСА
-  std::cout << "(1)Начать" << std::endl;
+  std::cout << "(1) Начать" << std::endl;
   std::cin >> start;
   if (start ==1) {
     std::cout << "Введи свой пароль" << std::endl;
@@ -12,6 +13,13 @@ int main() {
   }
     std::string password; // Переменная для пароля
     std::cin >> password;
-    // Далее должен быть код, который использует массивы и т.д.
-    // Заниматься этим пока что не буду.
+
+    std::cout << "Введи свой логин" << std::endl;
+    std::string login;
+    std::cin >> login;
+    // Я без понятия че там снизу, взял с инета.
+    
+    srand( time(0) );
+      std::string str[10] = {"Ты Поко", "Ты Шелли", "Ты Биби", "Ты Леон", "Ты Булл", "Ты Эль Примо", "Ты СТУ", "Ты Нита", "Ты Бо", "Ты Вольт" };
+      std::cout<< str[rand() % 10];
 }
