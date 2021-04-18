@@ -2,6 +2,8 @@
 #include <ctime>
 
 int main() {
+  setlocale(LC_ALL, "Russian");
+  
   std::cout << "Тест. Кто ты из бравлстарса по паролю от соц. сетей" << std::endl;
   int start; // Переменная для старта БРОУЛ СТАСА
   std::cout << "(1) Начать" << std::endl;
